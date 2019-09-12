@@ -8,11 +8,14 @@ public class Main {
 
         Warrior warrior = new Warrior(800, 40);
         warrior.setWarriorSuperPower(20);
+        warrior.superability();
 
         Magical magical = new Magical(700, 35);
         magical.setMagicalSuperPower(25);
+        magical.superability();
 
         Mental mental = new Mental(600, 30);
         mental.setMentalSuperPower(30);
+        mental.superability();
     }
 }

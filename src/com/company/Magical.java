@@ -1,6 +1,6 @@
 package com.company;
 
-public class Magical extends Player {
+public class Magical extends Player implements SuperAbility {
     private int magicalSuperPower;
 
     public int getMagicalSuperPower() {
@@ -14,4 +14,7 @@ public class Magical extends Player {
     public Magical(int playerHealth, double playerDamage) {
         super(playerHealth, playerDamage);
     }
+
+    @Override
+    public void superability() { System.out.println("Маг применил суперспособность"); }
 }

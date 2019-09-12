@@ -1,6 +1,6 @@
 package com.company;
 
-public class Warrior extends Player {
+public class Warrior extends Player implements SuperAbility {
     private int warriorSuperPower;
 
     public int getWarriorSuperPower() {
@@ -14,4 +14,8 @@ public class Warrior extends Player {
     public Warrior(int playerHealth, double playerDamage) {
         super(playerHealth, playerDamage);
     }
+
+
+    @Override
+    public void superability() { System.out.println("Воин применил суперспособность"); }
 }
